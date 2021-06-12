@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.DingdanquxiaoMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Dingdanquxiao">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="dingdanbianhao" property="dingdanbianhao" jdbcType="VARCHAR"/>
+                                    <result column="dingdanxinxi" property="dingdanxinxi" jdbcType="VARCHAR"/>
+                                    <result column="dingdanjine" property="dingdanjine" jdbcType="DECIMAL"/>
+                                    <result column="anpaipeisong" property="anpaipeisong" jdbcType="INTEGER"/>
+                                    <result column="gonghao" property="gonghao" jdbcType="VARCHAR"/>
+                                    <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="peisongyuantiwen" property="peisongyuantiwen" jdbcType="DECIMAL"/>
+                                    <result column="waimaitupian" property="waimaitupian" jdbcType="VARCHAR"/>
+                                    <result column="peisongzhaopian" property="peisongzhaopian" jdbcType="VARCHAR"/>
+                                    <result column="quxiaoyuanyin" property="quxiaoyuanyin" jdbcType="VARCHAR"/>
+                                    <result column="quxiaoren" property="quxiaoren" jdbcType="VARCHAR"/>
+                                                    <result column="dingdanpeisongid" property="dingdanpeisongid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, dingdanbianhao, dingdanxinxi, dingdanjine, anpaipeisong, gonghao, xingming, peisongyuantiwen, waimaitupian, peisongzhaopian, quxiaoyuanyin, quxiaoren, dingdanpeisongid, addtime    </sql>
+    </mapper>

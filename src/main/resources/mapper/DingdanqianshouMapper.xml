@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.DingdanqianshouMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Dingdanqianshou">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="dingdanbianhao" property="dingdanbianhao" jdbcType="VARCHAR"/>
+                                    <result column="dingdanxinxi" property="dingdanxinxi" jdbcType="VARCHAR"/>
+                                    <result column="dingdanjine" property="dingdanjine" jdbcType="DECIMAL"/>
+                                    <result column="peisongpingji" property="peisongpingji" jdbcType="VARCHAR"/>
+                                    <result column="pingjia" property="pingjia" jdbcType="VARCHAR"/>
+                                    <result column="pingjiaren" property="pingjiaren" jdbcType="VARCHAR"/>
+                                                    <result column="dingdanxinxiid" property="dingdanxinxiid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, dingdanbianhao, dingdanxinxi, dingdanjine, peisongpingji, pingjia, pingjiaren, dingdanxinxiid, addtime    </sql>
+    </mapper>

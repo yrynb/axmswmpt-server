@@ -1,0 +1,1644 @@
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<!--<html>-->
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【收藏记录】模块,表名：<span style="color: #990000">shoucangjilu</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>username</td>
+        <td>varchar(255)</td>
+        <td>收藏用户 </td>
+    </tr>
+        <tr>
+        <td>xwid</td>
+        <td>int</td>
+        <td>对应模块id </td>
+    </tr>
+        <tr>
+        <td>biao</td>
+        <td>varchar(255)</td>
+        <td>收藏得模块 </td>
+    </tr>
+        <tr>
+        <td>biaoti</td>
+        <td>varchar(255)</td>
+        <td>显示的标题 </td>
+    </tr>
+        <tr>
+        <td>url</td>
+        <td>varchar(512)</td>
+        <td>收藏URL </td>
+    </tr>
+        <tr>
+        <td>ziduan</td>
+        <td>varchar(255)</td>
+        <td>对应模块字段 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【前端登录凭证】模块,表名：<span style="color: #990000">token</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>token</td>
+        <td>char(32)</td>
+        <td>唯一值 </td>
+    </tr>
+        <tr>
+        <td>session</td>
+        <td>text</td>
+        <td>保存得数据 </td>
+    </tr>
+        <tr>
+        <td>cx</td>
+        <td>varchar(50)</td>
+        <td>登录权限 </td>
+    </tr>
+        <tr>
+        <td>login</td>
+        <td>varchar(50)</td>
+        <td>登录模块 </td>
+    </tr>
+        <tr>
+        <td>username</td>
+        <td>varchar(50)</td>
+        <td>登录用户 </td>
+    </tr>
+        <tr>
+        <td>valueid</td>
+        <td>varchar(50)</td>
+        <td>用户id </td>
+    </tr>
+        <tr>
+        <td>token_time</td>
+        <td>timestamp </td>
+        <td>当前时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                ，
+                字段：token ，
+                设置主键为token            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【管理员】模块,表名：<span style="color: #990000">admins</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>username</td>
+        <td>varchar(50)</td>
+        <td>帐号 </td>
+    </tr>
+        <tr>
+        <td>pwd</td>
+        <td>varchar(50)</td>
+        <td>密码 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【用户】模块,表名：<span style="color: #990000">yonghu</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>yonghuming</td>
+        <td>varchar(50)</td>
+        <td>用户名 </td>
+    </tr>
+        <tr>
+        <td>mima</td>
+        <td>varchar(50)</td>
+        <td>密码 </td>
+    </tr>
+        <tr>
+        <td>xingming</td>
+        <td>varchar(50)</td>
+        <td>姓名 </td>
+    </tr>
+        <tr>
+        <td>xingbie</td>
+        <td>varchar(255)</td>
+        <td>性别 </td>
+    </tr>
+        <tr>
+        <td>shouji</td>
+        <td>varchar(50)</td>
+        <td>手机 </td>
+    </tr>
+        <tr>
+        <td>youxiang</td>
+        <td>varchar(50)</td>
+        <td>邮箱 </td>
+    </tr>
+        <tr>
+        <td>shenfenzheng</td>
+        <td>varchar(50)</td>
+        <td>身份证 </td>
+    </tr>
+        <tr>
+        <td>touxiang</td>
+        <td>varchar(255)</td>
+        <td>头像 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【新闻分类】模块,表名：<span style="color: #990000">xinwenfenlei</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>fenleimingcheng</td>
+        <td>varchar(50)</td>
+        <td>分类名称 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【新闻信息】模块,表名：<span style="color: #990000">xinwenxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>biaoti</td>
+        <td>varchar(255)</td>
+        <td>标题 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>tianjiaren</td>
+        <td>varchar(50)</td>
+        <td>添加人 </td>
+    </tr>
+        <tr>
+        <td>dianjilv</td>
+        <td>int</td>
+        <td>点击率 </td>
+    </tr>
+        <tr>
+        <td>neirong</td>
+        <td>longtext</td>
+        <td>内容 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【xinwenfenlei】中的id 字段            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【友情链接】模块,表名：<span style="color: #990000">youqinglianjie</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>wangzhanmingcheng</td>
+        <td>varchar(50)</td>
+        <td>网站名称 </td>
+    </tr>
+        <tr>
+        <td>wangzhi</td>
+        <td>varchar(50)</td>
+        <td>网址 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【留言板】模块,表名：<span style="color: #990000">liuyanban</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>xingming</td>
+        <td>varchar(50)</td>
+        <td>姓名 </td>
+    </tr>
+        <tr>
+        <td>lianxidianhua</td>
+        <td>varchar(50)</td>
+        <td>联系电话 </td>
+    </tr>
+        <tr>
+        <td>liuyanneirong</td>
+        <td>text</td>
+        <td>留言内容 </td>
+    </tr>
+        <tr>
+        <td>liuyanren</td>
+        <td>varchar(50)</td>
+        <td>留言人 </td>
+    </tr>
+        <tr>
+        <td>huifuneirong</td>
+        <td>text</td>
+        <td>回复内容 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【轮播图】模块,表名：<span style="color: #990000">lunbotu</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>title</td>
+        <td>varchar(50)</td>
+        <td>标题 </td>
+    </tr>
+        <tr>
+        <td>image</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>url</td>
+        <td>varchar(255)</td>
+        <td>连接地址 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【商品分类】模块,表名：<span style="color: #990000">shangpinfenlei</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>fenleimingcheng</td>
+        <td>varchar(255)</td>
+        <td>分类名称 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【商品信息】模块,表名：<span style="color: #990000">shangpinxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>xiaoliang</td>
+        <td>int</td>
+        <td>销量 </td>
+    </tr>
+        <tr>
+        <td>shangpinxiangqing</td>
+        <td>longtext</td>
+        <td>商品详情 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【购物车】模块,表名：<span style="color: #990000">gouwuche</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>shangpinxinxiid</td>
+        <td>int</td>
+        <td>商品信息id </td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>goumaishuliang</td>
+        <td>int</td>
+        <td>购买数量 </td>
+    </tr>
+        <tr>
+        <td>xiaoji</td>
+        <td>decimal(18, 2)</td>
+        <td>小计 </td>
+    </tr>
+        <tr>
+        <td>goumairen</td>
+        <td>varchar(50)</td>
+        <td>购买人 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：shangpinxinxiid ，
+                关联表【shangpinxinxi】中字段id            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单信息_订单信息】模块,表名：<span style="color: #990000">dingdanxinxi_dingdanxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanxinxiid</td>
+        <td>int</td>
+        <td>关联表【dingdanxinxi】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinxinxiid</td>
+        <td>int</td>
+        <td>关联表【shangpinxinxi】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>goumaishuliang</td>
+        <td>int</td>
+        <td>购买数量 </td>
+    </tr>
+        <tr>
+        <td>xiaoji</td>
+        <td>decimal(18, 2)</td>
+        <td>小计 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanxinxiid ，
+                关联表【dingdanxinxi】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单信息】模块,表名：<span style="color: #990000">dingdanxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanbianhao</td>
+        <td>varchar(50)</td>
+        <td>订单编号 </td>
+    </tr>
+        <tr>
+        <td>dingdanxinxi</td>
+        <td>text</td>
+        <td>订单信息 </td>
+    </tr>
+        <tr>
+        <td>dingdanjine</td>
+        <td>decimal(18, 2)</td>
+        <td>订单金额 </td>
+    </tr>
+        <tr>
+        <td>shoucanren</td>
+        <td>varchar(50)</td>
+        <td>收餐人 </td>
+    </tr>
+        <tr>
+        <td>lianxidianhua</td>
+        <td>varchar(50)</td>
+        <td>联系电话 </td>
+    </tr>
+        <tr>
+        <td>shoucandizhi</td>
+        <td>varchar(255)</td>
+        <td>收餐地址 </td>
+    </tr>
+        <tr>
+        <td>cuncanweizhi</td>
+        <td>varchar(255)</td>
+        <td>存餐位置 </td>
+    </tr>
+        <tr>
+        <td>guketiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>顾客体温 </td>
+    </tr>
+        <tr>
+        <td>shifougeli</td>
+        <td>varchar(255)</td>
+        <td>是否隔离 </td>
+    </tr>
+        <tr>
+        <td>beizhu</td>
+        <td>text</td>
+        <td>备注 </td>
+    </tr>
+        <tr>
+        <td>dingdanzhuangtai</td>
+        <td>varchar(255)</td>
+        <td>订单状态 </td>
+    </tr>
+        <tr>
+        <td>xiadanren</td>
+        <td>varchar(50)</td>
+        <td>下单人 </td>
+    </tr>
+        <tr>
+        <td>iszf</td>
+        <td>varchar(10)</td>
+        <td>是否支付 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【配送员】模块,表名：<span style="color: #990000">peisongyuan</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>gonghao</td>
+        <td>varchar(50)</td>
+        <td>工号 </td>
+    </tr>
+        <tr>
+        <td>mima</td>
+        <td>varchar(50)</td>
+        <td>密码 </td>
+    </tr>
+        <tr>
+        <td>xingming</td>
+        <td>varchar(50)</td>
+        <td>姓名 </td>
+    </tr>
+        <tr>
+        <td>xingbie</td>
+        <td>varchar(255)</td>
+        <td>性别 </td>
+    </tr>
+        <tr>
+        <td>zhaopian</td>
+        <td>varchar(255)</td>
+        <td>照片 </td>
+    </tr>
+        <tr>
+        <td>nianling</td>
+        <td>varchar(50)</td>
+        <td>年龄 </td>
+    </tr>
+        <tr>
+        <td>peisongyuantiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>配送员体温 </td>
+    </tr>
+        <tr>
+        <td>zhuangtai</td>
+        <td>varchar(255)</td>
+        <td>状态 </td>
+    </tr>
+        <tr>
+        <td>lianxidianhua</td>
+        <td>varchar(50)</td>
+        <td>联系电话 </td>
+    </tr>
+        <tr>
+        <td>beizhu</td>
+        <td>text</td>
+        <td>备注 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单确认_订单信息】模块,表名：<span style="color: #990000">dingdanqueren_dingdanxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanquerenid</td>
+        <td>int</td>
+        <td>关联表【dingdanqueren】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinxinxiid</td>
+        <td>int</td>
+        <td>关联表【shangpinxinxi】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>goumaishuliang</td>
+        <td>int</td>
+        <td>购买数量 </td>
+    </tr>
+        <tr>
+        <td>xiaoji</td>
+        <td>decimal(18, 2)</td>
+        <td>小计 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanquerenid ，
+                关联表【dingdanqueren】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单确认】模块,表名：<span style="color: #990000">dingdanqueren</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanxinxiid</td>
+        <td>int</td>
+        <td>订单信息id </td>
+    </tr>
+        <tr>
+        <td>dingdanbianhao</td>
+        <td>varchar(50)</td>
+        <td>订单编号 </td>
+    </tr>
+        <tr>
+        <td>dingdanxinxi</td>
+        <td>text</td>
+        <td>订单信息 </td>
+    </tr>
+        <tr>
+        <td>dingdanjine</td>
+        <td>decimal(18, 2)</td>
+        <td>订单金额 </td>
+    </tr>
+        <tr>
+        <td>guketiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>顾客体温 </td>
+    </tr>
+        <tr>
+        <td>xiadanren</td>
+        <td>varchar(50)</td>
+        <td>下单人 </td>
+    </tr>
+        <tr>
+        <td>jiedanbeizhu</td>
+        <td>text</td>
+        <td>接单备注 </td>
+    </tr>
+        <tr>
+        <td>caozuoren</td>
+        <td>varchar(50)</td>
+        <td>操作人 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanxinxiid ，
+                关联表【dingdanxinxi】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【体温检测】模块,表名：<span style="color: #990000">tiwenjiance</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>peisongyuanid</td>
+        <td>int</td>
+        <td>配送员id </td>
+    </tr>
+        <tr>
+        <td>gonghao</td>
+        <td>varchar(50)</td>
+        <td>工号 </td>
+    </tr>
+        <tr>
+        <td>xingming</td>
+        <td>varchar(50)</td>
+        <td>姓名 </td>
+    </tr>
+        <tr>
+        <td>xingbie</td>
+        <td>varchar(255)</td>
+        <td>性别 </td>
+    </tr>
+        <tr>
+        <td>nianling</td>
+        <td>varchar(50)</td>
+        <td>年龄 </td>
+    </tr>
+        <tr>
+        <td>jiancetiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>检测体温 </td>
+    </tr>
+        <tr>
+        <td>zhuangtai</td>
+        <td>varchar(255)</td>
+        <td>状态 </td>
+    </tr>
+        <tr>
+        <td>beizhu</td>
+        <td>text</td>
+        <td>备注 </td>
+    </tr>
+        <tr>
+        <td>jianceren</td>
+        <td>varchar(50)</td>
+        <td>检测人 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：peisongyuanid ，
+                关联表【peisongyuan】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单配送_订单信息】模块,表名：<span style="color: #990000">dingdanpeisong_dingdanxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanpeisongid</td>
+        <td>int</td>
+        <td>关联表【dingdanpeisong】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinxinxiid</td>
+        <td>int</td>
+        <td>关联表【shangpinxinxi】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>goumaishuliang</td>
+        <td>int</td>
+        <td>购买数量 </td>
+    </tr>
+        <tr>
+        <td>xiaoji</td>
+        <td>decimal(18, 2)</td>
+        <td>小计 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanpeisongid ，
+                关联表【dingdanpeisong】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单配送】模块,表名：<span style="color: #990000">dingdanpeisong</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanxinxiid</td>
+        <td>int</td>
+        <td>订单信息id </td>
+    </tr>
+        <tr>
+        <td>dingdanbianhao</td>
+        <td>varchar(50)</td>
+        <td>订单编号 </td>
+    </tr>
+        <tr>
+        <td>dingdanxinxi</td>
+        <td>text</td>
+        <td>订单信息 </td>
+    </tr>
+        <tr>
+        <td>dingdanjine</td>
+        <td>decimal(18, 2)</td>
+        <td>订单金额 </td>
+    </tr>
+        <tr>
+        <td>guketiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>顾客体温 </td>
+    </tr>
+        <tr>
+        <td>xiadanren</td>
+        <td>varchar(50)</td>
+        <td>下单人 </td>
+    </tr>
+        <tr>
+        <td>shoucanren</td>
+        <td>varchar(50)</td>
+        <td>收餐人 </td>
+    </tr>
+        <tr>
+        <td>lianxidianhua</td>
+        <td>varchar(50)</td>
+        <td>联系电话 </td>
+    </tr>
+        <tr>
+        <td>shoucandizhi</td>
+        <td>varchar(255)</td>
+        <td>收餐地址 </td>
+    </tr>
+        <tr>
+        <td>cuncanweizhi</td>
+        <td>varchar(255)</td>
+        <td>存餐位置 </td>
+    </tr>
+        <tr>
+        <td>anpaipeisong</td>
+        <td>int</td>
+        <td>安排配送ID </td>
+    </tr>
+        <tr>
+        <td>gonghao</td>
+        <td>varchar(50)</td>
+        <td>工号 </td>
+    </tr>
+        <tr>
+        <td>xingming</td>
+        <td>varchar(50)</td>
+        <td>姓名 </td>
+    </tr>
+        <tr>
+        <td>peisongyuantiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>配送员体温 </td>
+    </tr>
+        <tr>
+        <td>waimaitupian</td>
+        <td>varchar(255)</td>
+        <td>外卖图片 </td>
+    </tr>
+        <tr>
+        <td>peisongzhaopian</td>
+        <td>varchar(255)</td>
+        <td>配送照片 </td>
+    </tr>
+        <tr>
+        <td>caozuoren</td>
+        <td>varchar(50)</td>
+        <td>操作人 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanxinxiid ，
+                关联表【dingdanxinxi】中字段id            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：anpaipeisong ，
+                关联表【peisongyuan】中的id 字段            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单签收_订单信息】模块,表名：<span style="color: #990000">dingdanqianshou_dingdanxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanqianshouid</td>
+        <td>int</td>
+        <td>关联表【dingdanqianshou】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinxinxiid</td>
+        <td>int</td>
+        <td>关联表【shangpinxinxi】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>goumaishuliang</td>
+        <td>int</td>
+        <td>购买数量 </td>
+    </tr>
+        <tr>
+        <td>xiaoji</td>
+        <td>decimal(18, 2)</td>
+        <td>小计 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanqianshouid ，
+                关联表【dingdanqianshou】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单签收】模块,表名：<span style="color: #990000">dingdanqianshou</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanxinxiid</td>
+        <td>int</td>
+        <td>订单信息id </td>
+    </tr>
+        <tr>
+        <td>dingdanbianhao</td>
+        <td>varchar(50)</td>
+        <td>订单编号 </td>
+    </tr>
+        <tr>
+        <td>dingdanxinxi</td>
+        <td>text</td>
+        <td>订单信息 </td>
+    </tr>
+        <tr>
+        <td>dingdanjine</td>
+        <td>decimal(18, 2)</td>
+        <td>订单金额 </td>
+    </tr>
+        <tr>
+        <td>peisongpingji</td>
+        <td>varchar(255)</td>
+        <td>配送评级 </td>
+    </tr>
+        <tr>
+        <td>pingjia</td>
+        <td>text</td>
+        <td>评价 </td>
+    </tr>
+        <tr>
+        <td>pingjiaren</td>
+        <td>varchar(50)</td>
+        <td>评价人 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanxinxiid ，
+                关联表【dingdanxinxi】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单取消_订单信息】模块,表名：<span style="color: #990000">dingdanquxiao_dingdanxinxi</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanquxiaoid</td>
+        <td>int</td>
+        <td>关联表【dingdanquxiao】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinxinxiid</td>
+        <td>int</td>
+        <td>关联表【shangpinxinxi】中字段id </td>
+    </tr>
+        <tr>
+        <td>shangpinbianhao</td>
+        <td>varchar(50)</td>
+        <td>商品编号 </td>
+    </tr>
+        <tr>
+        <td>fenlei</td>
+        <td>int</td>
+        <td>分类 </td>
+    </tr>
+        <tr>
+        <td>shangpinmingcheng</td>
+        <td>varchar(255)</td>
+        <td>商品名称 </td>
+    </tr>
+        <tr>
+        <td>tupian</td>
+        <td>varchar(255)</td>
+        <td>图片 </td>
+    </tr>
+        <tr>
+        <td>jiage</td>
+        <td>decimal(18, 2)</td>
+        <td>价格 </td>
+    </tr>
+        <tr>
+        <td>goumaishuliang</td>
+        <td>int</td>
+        <td>购买数量 </td>
+    </tr>
+        <tr>
+        <td>xiaoji</td>
+        <td>decimal(18, 2)</td>
+        <td>小计 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：fenlei ，
+                关联表【shangpinfenlei】中的id 字段            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanquxiaoid ，
+                关联表【dingdanquxiao】中字段id            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+<table width=600 cellpadding="6" cellspacing="1" style="margin: 0 auto">
+    <tbody>
+    <tr>
+        <td colspan="3" bgcolor="#DEDEDE">
+            【订单取消】模块,表名：<span style="color: #990000">dingdanquxiao</span>
+        </td>
+    </tr>
+    <tr>
+        <td>字段名</td>
+        <td>字段类型</td>
+        <td>名称</td>
+    </tr>
+        <tr>
+        <td>id</td>
+        <td>int</td>
+        <td> (主键)</td>
+    </tr>
+        <tr>
+        <td>dingdanpeisongid</td>
+        <td>int</td>
+        <td>订单配送id </td>
+    </tr>
+        <tr>
+        <td>dingdanbianhao</td>
+        <td>varchar(50)</td>
+        <td>订单编号 </td>
+    </tr>
+        <tr>
+        <td>dingdanxinxi</td>
+        <td>text</td>
+        <td>订单信息 </td>
+    </tr>
+        <tr>
+        <td>dingdanjine</td>
+        <td>decimal(18, 2)</td>
+        <td>订单金额 </td>
+    </tr>
+        <tr>
+        <td>anpaipeisong</td>
+        <td>int</td>
+        <td>安排配送ID </td>
+    </tr>
+        <tr>
+        <td>gonghao</td>
+        <td>varchar(50)</td>
+        <td>工号 </td>
+    </tr>
+        <tr>
+        <td>xingming</td>
+        <td>varchar(50)</td>
+        <td>姓名 </td>
+    </tr>
+        <tr>
+        <td>peisongyuantiwen</td>
+        <td>decimal(18, 2)</td>
+        <td>配送员体温 </td>
+    </tr>
+        <tr>
+        <td>waimaitupian</td>
+        <td>varchar(255)</td>
+        <td>外卖图片 </td>
+    </tr>
+        <tr>
+        <td>peisongzhaopian</td>
+        <td>varchar(255)</td>
+        <td>配送照片 </td>
+    </tr>
+        <tr>
+        <td>quxiaoyuanyin</td>
+        <td>text</td>
+        <td>取消原因 </td>
+    </tr>
+        <tr>
+        <td>quxiaoren</td>
+        <td>varchar(50)</td>
+        <td>取消人 </td>
+    </tr>
+        <tr>
+        <td>addtime</td>
+        <td>timestamp </td>
+        <td>添加时间 </td>
+    </tr>
+    
+                                <tr>
+            <td colspan="3">
+                设置索引，
+                字段：dingdanpeisongid ，
+                关联表【dingdanpeisong】中字段id            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                设置索引，
+                字段：anpaipeisong ，
+                关联表【peisongyuan】中的id 字段            </td>
+        </tr>
+                </tbody>
+</table>
+<p>&nbsp;</p>
+
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.DingdanpeisongMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Dingdanpeisong">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="dingdanbianhao" property="dingdanbianhao" jdbcType="VARCHAR"/>
+                                    <result column="dingdanxinxi" property="dingdanxinxi" jdbcType="VARCHAR"/>
+                                    <result column="dingdanjine" property="dingdanjine" jdbcType="DECIMAL"/>
+                                    <result column="guketiwen" property="guketiwen" jdbcType="DECIMAL"/>
+                                    <result column="xiadanren" property="xiadanren" jdbcType="VARCHAR"/>
+                                    <result column="shoucanren" property="shoucanren" jdbcType="VARCHAR"/>
+                                    <result column="lianxidianhua" property="lianxidianhua" jdbcType="VARCHAR"/>
+                                    <result column="shoucandizhi" property="shoucandizhi" jdbcType="VARCHAR"/>
+                                    <result column="cuncanweizhi" property="cuncanweizhi" jdbcType="VARCHAR"/>
+                                    <result column="anpaipeisong" property="anpaipeisong" jdbcType="INTEGER"/>
+                                    <result column="gonghao" property="gonghao" jdbcType="VARCHAR"/>
+                                    <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="peisongyuantiwen" property="peisongyuantiwen" jdbcType="DECIMAL"/>
+                                    <result column="waimaitupian" property="waimaitupian" jdbcType="VARCHAR"/>
+                                    <result column="peisongzhaopian" property="peisongzhaopian" jdbcType="VARCHAR"/>
+                                    <result column="caozuoren" property="caozuoren" jdbcType="VARCHAR"/>
+                                                    <result column="dingdanxinxiid" property="dingdanxinxiid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, dingdanbianhao, dingdanxinxi, dingdanjine, guketiwen, xiadanren, shoucanren, lianxidianhua, shoucandizhi, cuncanweizhi, anpaipeisong, gonghao, xingming, peisongyuantiwen, waimaitupian, peisongzhaopian, caozuoren, dingdanxinxiid, addtime    </sql>
+    </mapper>
